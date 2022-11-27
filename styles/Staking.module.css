@@ -2,9 +2,9 @@
     position: fixed;
     top: 5%;
     left: 5%;
-  }
-  
-  .btn {
+}
+
+.btn {
     background-color: var(--tw-color1);
     outline: none;
     border: none;
@@ -15,26 +15,26 @@
     font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
-  
+
     transition: background-color 300ms ease-in-out;
     transform-origin: center;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: var(--tw-color1-hover);
-  }
-  
-  .btn:active {
+}
+
+.btn:active {
     transform: scale(0.95);
-  }
-  
-  .address {
+}
+
+.address {
     font-size: 1.5rem;
     margin-bottom: 16px;
-  }
-  
-  .container {
-    margin-top: 96px;
+}
+
+.container {
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,16 +42,18 @@
     width: 100%;
     position: absolute;
     padding: 0 24px;
-  }
-  
-  .page {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+.page {
     width: inherit;
     border-radius: 20px;
     border: 1px solid var(--tw-color1);
     padding: 16px;
-  }
-  
-  .pageContainer {
+}
+
+.pageContainer {
     max-width: 600px;
     width: 90vw;
     display: flex;
@@ -60,27 +62,27 @@
     flex-direction: row;
     gap: 2%;
     padding: 1rem;
-  }
-  
-  .arrowButton {
+}
+
+.arrowButton {
     border-radius: 50%;
     width: 30px;
-  }
-  
-  .owner {
+}
+
+.owner {
     font-size: 1rem;
-  }
-  
-  .btnContainer {
+}
+
+.btnContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-  }
-  
-  .header {
-    background-color: #262936;
+}
+
+.header {
+    background-color: #000000;
     position: fixed;
     top: 0;
     left: 0;
@@ -91,107 +93,127 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .left {
+}
+
+.left {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-left: 5%;
-  }
-  
-  .right {
+}
+
+.right {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     margin-right: 5%;
-  }
-  
-  .secondaryButton {
+}
+
+.secondaryButton {
     cursor: pointer;
     text-align: center;
     padding: 5px;
     color: #fff;
     font-weight: 600;
-  }
-  
-  .mainButton {
-    cursor: pointer;
-    display: inline-flex;
-    appearance: none;
-    align-items: center;
-    -webkit-box-align: center;
-    justify-content: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    line-height: 1.2;
-    font-weight: 600;
-    transition-property: background-color, border-color, color, fill, stroke,
-      opacity, box-shadow, transform;
-    transition-duration: 200ms;
-    height: 3rem;
-    min-width: 3rem;
-    font-size: 1rem;
-    background: #e5e5ea;
-    background-image: linear-gradient(to left, #cc25b3 0%, #418dff 101.52%);
-    color: #fff;
-    width: 180px;
-    text-align: center;
-    border-radius: 9999px;
-    border-style: none;
-  }
-  
-  .mainButton:hover {
+}
+
+.mainButton {
+  cursor: pointer;
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1.2;
+  font-weight: 600;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  height: 3rem;
+  min-width: 3rem;
+  font-size: 1rem;
+  background: #000000;
+  background-color:#d7b834;
+  color: rgb(0, 0, 0);
+  width: 180px;
+  text-align: center;
+  border-radius: 9999px;
+  border-style: none;
+}
+
+.mainButton:hover {
     opacity: 0.8;
-  }
-  
-  .ourCollection {
+}
+
+.mintInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.infoSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.ourCollection {
     font-size: 1.5rem;
     margin-bottom: 16px;
-  }
-  
-  .collectionContainer {
+}
+
+.collectionContainer {
     width: 1200px;
     max-width: 90vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2%;
-  }
-  
-  .h1 {
-    margin-bottom: 0px;
-  }
-  
-  .explain {
+}
+
+.h1 {
+    font-style: inherit;
+    color: white;
+}
+
+.explain {
     font-size: 1.125rem;
     max-width: 1200px;
-  }
-  
-  .purple {
+    color: white;
+}
+
+.purple {
     color: #9f2c9d;
-  }
-  
-  .divider {
+}
+
+.divider {
     width: 50%;
     border-color: grey;
     opacity: 0.25;
-  }
-  
-  .smallDivider {
+}
+
+.smallDivider {
     width: 25%;
     border-color: grey;
     margin-top: 64px;
     opacity: 0.25;
-  }
-  
-  .textInput {
+}
+
+.textInput {
     width: 75%;
     background-color: transparent;
     border: 1px solid grey;
@@ -201,9 +223,9 @@
     padding: 0 16px;
     font-size: 1rem;
     margin-bottom: 16px;
-  }
-  
-  .imageInput {
+}
+
+.imageInput {
     width: 100%;
     height: 100px;
     border: 1px dashed grey;
@@ -213,9 +235,9 @@
     justify-content: center;
     color: grey;
     cursor: pointer;
-  }
-  
-  .contractBoxGrid {
+}
+
+.contractBoxGrid {
     width: 1200px;
     max-width: 95vw;
     display: flex;
@@ -223,9 +245,9 @@
     align-items: center;
     gap: 1%;
     flex-wrap: wrap;
-  }
-  
-  .contractBox {
+}
+
+.contractBox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,49 +260,49 @@
     color: rgba(255, 255, 255, 0.9);
     margin-top: 16px;
     padding-top: 25px;
-  }
-  
-  /* Between 700px and 900px */
-  @media screen and (min-width: 700px) and (max-width: 900px) {
+}
+
+/* Between 700px and 900px */
+@media screen and (min-width: 700px) and (max-width: 900px) {
     .contractBoxGrid {
-      gap: 2%;
+        gap: 2%;
     }
-  
+
     .contractBox {
-      width: 48%;
+        width: 48%;
     }
-  }
-  
-  @media screen and (max-width: 699px) {
+}
+
+@media screen and (max-width: 699px) {
     .contractBoxGrid {
-      gap: 2%;
+        gap: 2%;
     }
-  
+
     .contractBox {
-      width: 98%;
+        width: 98%;
     }
-  }
-  
-  .nftBoxGrid {
+}
+
+.nftBoxGrid {
     width: 1200px;
-    max-width: 95vw;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 2%;
-    margin-top: 28px;
+    margin-top: 5px;
     flex-wrap: wrap;
-  }
-  
-  .nftBox {
+}
+
+.nftBox {
     border-radius: 16px;
     border: 1px solid #ccc;
     width: 19%;
     min-height: 200px;
-  }
-  
-  .optionSelectBox {
+}
+
+.optionSelectBox {
     border-radius: 16px;
     border: 1px solid #ccc;
     width: 48%;
@@ -293,44 +315,46 @@
     padding-left: 12px;
     padding-right: 12px;
     cursor: pointer;
-  }
-  
-  .selectBoxTitle {
+}
+
+.selectBoxTitle {
     font-size: 1.75rem;
     margin-top: 8px;
     margin-bottom: 8px;
-  }
-  
-  .selectBoxDescription {
+}
+
+.selectBoxDescription {
     color: rgba(255, 255, 255, 0.9);
     margin-top: 0px;
-  }
-  
-  /* Between 1200 and 800 */
-  @media only screen and (min-width: 800px) and (max-width: 1200px) {
+}
+
+/* Between 1200 and 800 */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
     .nftBox {
-      width: 49%;
-      margin-top: 16px;
+        width: 49%;
+        margin-top: 16px;
     }
-  }
-  
-  /* beneath 800
+}
+
+/* beneath 800
   */
-  @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .nftBoxGrid {
-      justify-content: center;
+        justify-content: center;
     }
+
     .nftBox {
-      width: 90%;
-      margin-top: 16px;
+        width: 90%;
+        margin-bottom: 16px;
     }
+
     .optionSelectBox {
-      width: 90%;
-      margin-top: 16px;
+        width: 90%;
+        margin-bottom: 16px;
     }
-  }
-  
-  .tokenGrid {
+}
+
+.tokenGrid {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -339,10 +363,10 @@
     width: 1600px;
     max-width: 95vw;
     flex-wrap: wrap;
-    margin-top: 16px;
-  }
-  
-  .tokenItem {
+    margin-bottom: 16px;
+}
+
+.tokenItem {
     width: 35%;
     height: 120px;
     border-radius: 16px;
@@ -352,71 +376,71 @@
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.4);
     gap: 16px;
-  }
-  
-  .tokenLabel {
+}
+
+.tokenLabel {
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.7);
-  }
-  
-  /* Second tokenLabel item */
-  
-  .tokenValue {
+}
+
+/* Second tokenLabel item */
+
+.tokenValue {
     font-size: 1.3rem;
     margin-top: 8px;
     margin-bottom: 0px;
     font-weight: 500;
-  }
-  
-  /* On Mobile, make tokenGrid 100% width */
-  @media only screen and (max-width: 850px) {
+}
+
+/* On Mobile, make tokenGrid 100% width */
+@media only screen and (max-width: 850px) {
     .tokenItem {
-      width: 90%;
-      margin-top: 12px;
+        width: 90%;
+        margin-top: 12px;
     }
-  }
-  
-  /* Screen less than 630, then hide .center */
-  @media only screen and (max-width: 630px) {
+}
+
+/* Screen less than 630, then hide .center */
+@media only screen and (max-width: 630px) {
     .center {
-      display: none;
+        display: none;
     }
-  }
-  
-  .spacerTop {
+}
+
+.spacerTop {
     margin-top: 16px;
-  }
-  
-  .bigSpacerTop {
+}
+
+.bigSpacerTop {
     margin-top: 32px;
-  }
-  
-  .spacerBottom {
+}
+
+.spacerBottom {
     margin-bottom: 16px;
-  }
-  
-  .cardName {
+}
+
+.cardName {
     margin-bottom: 0px;
-  }
-  
-  .cardDescription {
+}
+
+.cardDescription {
     color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .headerLogo {
+}
+
+.headerLogo {
     width: 135px;
     cursor: pointer;
-  }
-  
-  .verticalSpacer {
+}
+
+.verticalSpacer {
     color: grey;
     margin-left: 8px;
     margin-right: 8px;
-  }
-  
-  .codeSnippet {
+}
+
+.codeSnippet {
     text-align: start;
     padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -426,40 +450,36 @@
     background-color: #282c34;
     overflow-x: auto;
     font-size: 1rem;
-  }
-  
-  .noUnderline {
+}
+
+.noUnderline {
     text-decoration: none;
-  }
-  
-  .detailPageContainer {
+}
+
+.detailPageContainer {
     max-width: 800px;
-  }
-  
-  .detailPageHr {
+}
+
+.detailPageHr {
     margin-top: 0px;
     margin-bottom: 32px;
-  }
-  
-  .lightPurple {
+}
+
+.lightPurple {
     color: #e011a7;
-  }
-  
-  .nftMedia {
+}
+
+.nftMedia {
     width: 100%;
     max-height: 300px;
     border-radius: 15px;
-  }
-  
-  .amountToClaim {
+}
+
+.amountToClaim {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
     gap: 16px;
     margin-top: 32px;
-  }
-  
-  .noGapBottom {
-    margin-bottom: 0px;
-  }
+}

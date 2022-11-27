@@ -16,7 +16,7 @@ import styles from "../styles/Home.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 const Home = () => {
-  const tokenAddress = "0x03728725240b021887355c943d040BF933F3d5F0";
+  const tokenAddress = "0xE166c801A0cCb838ACeFFCdd9F4C813574A8E6A4";
   const { contract } = useContract(tokenAddress, "token-drop");
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
@@ -234,7 +234,8 @@ const Home = () => {
 
           <h2 className={styles.title}>Claim Tokens</h2>
           <p className={styles.explain}>
-            Claim ERC20 tokens from{" "}
+            One drop per wallet, must claim ALL tokens in the first transaction.
+            Each drop is 2,000{" "}
             <span className={styles.pink}>{contractMetadata?.name}</span>
           </p>
         </>
