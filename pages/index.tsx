@@ -11,7 +11,7 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  const contractAddress = "0x90e75808Be7Edc6d49feBe26E051d6938C98ab09";
+  const contractAddress = "0xE166c801A0cCb838ACeFFCdd9F4C813574A8E6A4";
   const address = useAddress();
   const [quantity, setQuantity] = useState("2000");
   const { contract } = useContract(contractAddress);
