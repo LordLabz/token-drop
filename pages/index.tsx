@@ -26,7 +26,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Aura LTE {" "}
+          Aura LTE{" "}
           <a href="https://thirdweb.com/nach.eth/DynamicFreeMint/">
             $ZOE claim
           </a>
@@ -56,21 +56,14 @@ const Home: NextPage = () => {
 
         <div style={{ marginTop: "10px" }}>
           <Web3Button
+            accentColor="#5204BF"
+            colorMode="dark"
             contractAddress={contractAddress}
-            action={(contract) => {
-              contract.call("claim", address, quantity, {
-                value: price,
-              });
-            }}
+            action={(contract) => contract.erc20.claim(quantity)}
+            onSuccess={() => alert("Claimed!")}
+            onError={(err) => alert(err)}
           >
-            Claim{" "}
-            {price
-              ? `(${
-                  price?.toString() === "0"
-                    ? "Free"
-                    : `${utils.formatEther(price)} ETH`
-                })`
-              : ""}
+            {"claim"}
           </Web3Button>
         </div>
       </main>
