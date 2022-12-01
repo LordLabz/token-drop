@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Aura LTE{" "}
-          <a href="https://thirdweb.com/nach.eth/DynamicFreeMint/">
+          <a href="https://auralte.crd.co/">
             $ZOE claim
           </a>
           !
